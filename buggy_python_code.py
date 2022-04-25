@@ -5,6 +5,7 @@ import subprocess
 import base64
 import subprocess
 import flask
+import pickle
 
 # Input injection
 def transcode_file(request, filename):
@@ -13,7 +14,7 @@ def transcode_file(request, filename):
 
 
 # Assert statements
-def foo(request, user):
+def test(request, user):
     assert user.is_admin, 'user does not have access'
     # secure code...
 
